@@ -1,13 +1,7 @@
 # Laravel fullcalendar component
-
-[![Latest Stable Version](https://poser.pugx.org/edofre/laravel-fullcalendar/v/stable)](https://packagist.org/packages/edofre/laravel-fullcalendar)
-[![Total Downloads](https://poser.pugx.org/edofre/laravel-fullcalendar/downloads)](https://packagist.org/packages/edofre/laravel-fullcalendar)
-[![Latest Unstable Version](https://poser.pugx.org/edofre/laravel-fullcalendar/v/unstable)](https://packagist.org/packages/edofre/laravel-fullcalendar)
-[![License](https://poser.pugx.org/edofre/laravel-fullcalendar/license)](https://packagist.org/packages/edofre/laravel-fullcalendar)
-[![composer.lock](https://poser.pugx.org/edofre/laravel-fullcalendar/composerlock)](https://packagist.org/packages/edofre/laravel-fullcalendar)
-[![Build Status](https://travis-ci.org/Edofre/laravel-fullcalendar.svg?branch=master)](https://travis-ci.org/Edofre/laravel-fullcalendar)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/Edofre/laravel-fullcalendar/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/Edofre/laravel-fullcalendar/?branch=master)
-
+Notice: This is a fork of  Edofre/laravel-fullcalendar package, which I have grown to love and use. My intention is to bring it up to code compliance for the newer versions of Laravel. 
+I have just forked his code and except for the README I have done not work.
+DO NOT USE THIS CODE!!! See https://github.com/Edofre/laravel-fullcalendar for the original package.
 ## Installation
 
 The preferred way to install this extension is through [composer](http://getcomposer.org/download/).

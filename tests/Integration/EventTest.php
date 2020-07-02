@@ -1,13 +1,13 @@
 <?php
 
-namespace Edofre\Fullcalendar\Test\Integration;
+namespace SMPT\Fullcalendar\Test\Integration;
 
 use Carbon\Carbon;
-use Edofre\Fullcalendar\Event;
+use SMPT\Fullcalendar\Event;
 
 /**
  * Class EventTest
- * @package Edofre\Fullcalendar\Test\Integration
+ * @package SMPT\Fullcalendar\Test\Integration
  */
 class EventTest extends \Orchestra\Testbench\TestCase
 {

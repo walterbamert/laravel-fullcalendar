@@ -1,12 +1,12 @@
 <?php
 
-namespace Edofre\Fullcalendar;
+namespace SMPT\Fullcalendar;
 
 use Illuminate\Support\ServiceProvider;
 
 /**
  * Class FullcalendarServiceProvider
- * @package Edofre\Fullcalendar
+ * @package SMPT\Fullcalendar
  */
 class FullcalendarServiceProvider extends ServiceProvider
 {

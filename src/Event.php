@@ -1,10 +1,10 @@
 <?php
 
-namespace Edofre\Fullcalendar;
+namespace SMPT\Fullcalendar;
 
 /**
  * Class Event
- * @package Edofre\Fullcalendar
+ * @package SMPT\Fullcalendar
  */
 class Event
 {

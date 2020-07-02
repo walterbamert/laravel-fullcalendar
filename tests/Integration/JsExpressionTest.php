@@ -1,17 +1,17 @@
 <?php
 
-namespace Edofre\Fullcalendar\Test\Integration;
+namespace SMPT\Fullcalendar\Test\Integration;
 
 /**
  * Class JsExpressionTest
- * @package Edofre\Fullcalendar\Test\Integration
+ * @package SMPT\Fullcalendar\Test\Integration
  */
 class JsExpressionTest extends \Orchestra\Testbench\TestCase
 {
     /** @test */
     public function generate_event_with_id()
     {
-        $jsExpressionTest = new \Edofre\Fullcalendar\JsExpression("
+        $jsExpressionTest = new \SMPT\Fullcalendar\JsExpression("
                 function( view, element ) {
                     console.log(\"View \"+view.name+\" rendered\");
                 }

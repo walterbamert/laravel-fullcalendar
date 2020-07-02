@@ -1,12 +1,12 @@
 <?php
 
-namespace Edofre\Fullcalendar\Facades;
+namespace SMPT\Fullcalendar\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
 /**
  * Class Fullcalendar
- * @package Edofre\Fullcalendar\Facades
+ * @package SMPT\Fullcalendar\Facades
  */
 class Fullcalendar extends Facade
 {

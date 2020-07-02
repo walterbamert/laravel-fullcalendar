@@ -1,10 +1,10 @@
 <?php
 
-namespace Edofre\Fullcalendar\Test\Integration;
+namespace SMPT\Fullcalendar\Test\Integration;
 
 /**
  * Class EventTest
- * @package Edofre\Fullcalendar\Test\Integration
+ * @package SMPT\Fullcalendar\Test\Integration
  */
 abstract class TestCase extends \Orchestra\Testbench\TestCase
 {
@@ -23,7 +23,7 @@ abstract class TestCase extends \Orchestra\Testbench\TestCase
     protected function getPackageProviders($app)
     {
         return [
-            \Edofre\Fullcalendar\FullcalendarServiceProvider::class,
+            \SMPT\Fullcalendar\FullcalendarServiceProvider::class,
         ];
     }
 
@@ -34,7 +34,7 @@ abstract class TestCase extends \Orchestra\Testbench\TestCase
     protected function getPackageAliases($app)
     {
         return [
-            'Fullcalendar' => \Edofre\Fullcalendar\Facades\Fullcalendar::class,
+            'Fullcalendar' => \SMPT\Fullcalendar\Facades\Fullcalendar::class,
         ];
     }
 }

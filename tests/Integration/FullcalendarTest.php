@@ -1,10 +1,10 @@
 <?php
 
-namespace Edofre\Fullcalendar\Test\Integration;
+namespace SMPT\Fullcalendar\Test\Integration;
 
 /**
  * Class FullcalendarTest
- * @package Edofre\Fullcalendar\Test\Integration
+ * @package SMPT\Fullcalendar\Test\Integration
  */
 class FullcalendarTest extends TestCase
 {
@@ -13,7 +13,7 @@ class FullcalendarTest extends TestCase
     public function generate_event_with_id()
     {
         // Generate a new fullcalendar instance
-        $calendar = new \Edofre\Fullcalendar\Fullcalendar();
+        $calendar = new \SMPT\Fullcalendar\Fullcalendar();
 
         // Set options
         $calendar->setOptions([

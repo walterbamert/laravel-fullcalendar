@@ -1,17 +1,17 @@
 <?php
 
-namespace SMPT\Fullcalendar\Test\Integration;
+namespace walterbamert\Fullcalendar\Test\Integration;
 
 /**
  * Class JsExpressionTest
- * @package SMPT\Fullcalendar\Test\Integration
+ * @package walterbamert\Fullcalendar\Test\Integration
  */
 class JsExpressionTest extends \Orchestra\Testbench\TestCase
 {
     /** @test */
     public function generate_event_with_id()
     {
-        $jsExpressionTest = new \SMPT\Fullcalendar\JsExpression("
+        $jsExpressionTest = new \walterbamert\Fullcalendar\JsExpression("
                 function( view, element ) {
                     console.log(\"View \"+view.name+\" rendered\");
                 }

@@ -1,13 +1,13 @@
 <?php
 
-namespace SMPT\Fullcalendar\Test\Integration;
+namespace walterbamert\Fullcalendar\Test\Integration;
 
 use Carbon\Carbon;
-use SMPT\Fullcalendar\Event;
+use walterbamert\Fullcalendar\Event;
 
 /**
  * Class EventTest
- * @package SMPT\Fullcalendar\Test\Integration
+ * @package walterbamert\Fullcalendar\Test\Integration
  */
 class EventTest extends \Orchestra\Testbench\TestCase
 {

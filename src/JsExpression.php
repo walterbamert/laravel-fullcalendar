@@ -1,10 +1,10 @@
 <?php
 
-namespace SMPT\Fullcalendar;
+namespace walterbamert\Fullcalendar;
 
 /**
  * Class JsExpression
- * @package SMPT\Fullcalendar
+ * @package walterbamert\Fullcalendar
  */
 class JsExpression
 {

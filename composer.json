@@ -32,16 +32,16 @@
   },
   "require-dev": {
     "orchestra/testbench": "^5.*",
-    "phpunit/phpunit": "^5.*"
+    "phpunit/phpunit": "^8.5"
   },
   "autoload": {
     "psr-4": {
-      "SMPT\\Fullcalendar\\": "src"
+      "walterbamert\\Fullcalendar\\": "src"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "SMPT\\Fullcalendar\\Test\\": "tests"
+      "walterbamert\\Fullcalendar\\Test\\": "tests"
     }
   },
   "scripts": {
@@ -50,10 +50,10 @@
   "extra": {
     "laravel": {
       "providers": [
-        "SMPT\\Fullcalendar\\FullcalendarServiceProvider"
+        "walterbamert\\Fullcalendar\\FullcalendarServiceProvider"
       ],
       "aliases": {
-        "Fullcalendar": "SMPT\\Fullcalendar\\Facades\\Fullcalendar"
+        "Fullcalendar": "walterbamert\\Fullcalendar\\Facades\\Fullcalendar"
       }
     }
   }

@@ -1,10 +1,10 @@
 <?php
 
-namespace SMPT\Fullcalendar\Test\Integration;
+namespace walterbamert\Fullcalendar\Test\Integration;
 
 /**
  * Class FullcalendarTest
- * @package SMPT\Fullcalendar\Test\Integration
+ * @package walterbamert\Fullcalendar\Test\Integration
  */
 class FullcalendarTest extends TestCase
 {
@@ -13,7 +13,7 @@ class FullcalendarTest extends TestCase
     public function generate_event_with_id()
     {
         // Generate a new fullcalendar instance
-        $calendar = new \SMPT\Fullcalendar\Fullcalendar();
+        $calendar = new \walterbamert\Fullcalendar\Fullcalendar();
 
         // Set options
         $calendar->setOptions([

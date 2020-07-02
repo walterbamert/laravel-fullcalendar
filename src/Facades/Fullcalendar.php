@@ -1,12 +1,12 @@
 <?php
 
-namespace SMPT\Fullcalendar\Facades;
+namespace walterbamert\Fullcalendar\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
 /**
  * Class Fullcalendar
- * @package SMPT\Fullcalendar\Facades
+ * @package walterbamert\Fullcalendar\Facades
  */
 class Fullcalendar extends Facade
 {

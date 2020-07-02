@@ -1,10 +1,10 @@
 <?php
 
-namespace SMPT\Fullcalendar;
+namespace walterbamert\Fullcalendar;
 
 /**
  * Class Event
- * @package SMPT\Fullcalendar
+ * @package walterbamert\Fullcalendar
  */
 class Event
 {

@@ -1,12 +1,12 @@
 <?php
 
-namespace SMPT\Fullcalendar;
+namespace walterbamert\Fullcalendar;
 
 use Illuminate\Support\ServiceProvider;
 
 /**
  * Class FullcalendarServiceProvider
- * @package SMPT\Fullcalendar
+ * @package walterbamert\Fullcalendar
  */
 class FullcalendarServiceProvider extends ServiceProvider
 {

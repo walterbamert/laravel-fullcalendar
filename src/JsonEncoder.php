@@ -1,12 +1,12 @@
 <?php
 
-namespace SMPT\Fullcalendar;
+namespace walterbamert\Fullcalendar;
 
 /**
  * Class JsonEncoder
  * Modified from
  * https://github.com/yiisoft/yii2/blob/master/framework/helpers/BaseJson.php
- * @package SMPT\Fullcalendar
+ * @package walterbamert\Fullcalendar
  */
 class JsonEncoder
 {

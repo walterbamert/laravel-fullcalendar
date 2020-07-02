@@ -13,7 +13,7 @@
   "authors": [
     {
       "name": "Edo Freriks",
-      "email": "walterbamert@gmail.com"
+      "email": "edofre@gmail.com"
     },
     {
       "name": "Walter Bamert",
@@ -36,12 +36,12 @@
   },
   "autoload": {
     "psr-4": {
-      "Edofre\\Fullcalendar\\": "src"
+      "SMPT\\Fullcalendar\\": "src"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "Edofre\\Fullcalendar\\Test\\": "tests"
+      "SMPT\\Fullcalendar\\Test\\": "tests"
     }
   },
   "scripts": {
@@ -50,10 +50,10 @@
   "extra": {
     "laravel": {
       "providers": [
-        "Edofre\\Fullcalendar\\FullcalendarServiceProvider"
+        "SMPT\\Fullcalendar\\FullcalendarServiceProvider"
       ],
       "aliases": {
-        "Fullcalendar": "Edofre\\Fullcalendar\\Facades\\Fullcalendar"
+        "Fullcalendar": "SMPT\\Fullcalendar\\Facades\\Fullcalendar"
       }
     }
   }

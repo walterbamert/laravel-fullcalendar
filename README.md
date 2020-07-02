@@ -1,6 +1,6 @@
 # Laravel fullcalendar component
 Notice: This is a fork of  Edofre/laravel-fullcalendar package, which I have grown to love and use. My intention is to bring it up to code compliance for the newer versions of Laravel. 
-I have just forked his code and except for the README I have done not work.
+I have just forked his code and except for the README I have done no work.
 DO NOT USE THIS CODE!!! See https://github.com/Edofre/laravel-fullcalendar for the original package.
 ## Installation
 

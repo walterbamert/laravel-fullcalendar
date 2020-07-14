@@ -3,7 +3,7 @@
 @endif
 
 <script type="text/javascript">
-    $(document).ready(function () {
-        $('#{{ $id }}').fullCalendar({!! $options !!});
+    jQuery(document).ready(function () {
+        jQuery('#{{ $id }}').fullCalendar({!! $options !!});
     });
 </script>

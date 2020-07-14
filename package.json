@@ -2,6 +2,7 @@
   "name": "laravel-fullcalendar",
   "version": "1.0.0",
   "dependencies": {
-    "fullcalendar": "latest"
+    "fullcalendar": "latest",
+    "moment": "latest"
   }
 }

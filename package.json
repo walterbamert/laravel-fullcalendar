@@ -2,6 +2,6 @@
   "name": "laravel-fullcalendar",
   "version": "1.0.0",
   "dependencies": {
-    "https://github.com/fullcalendar/fullcalendar": "latest"
+    "fullcalendar": "latest"
   }
 }

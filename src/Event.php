@@ -50,7 +50,7 @@ class Event
     public $textColor;
 
     /** @var  array Validation rules */
-    public $rules = [
+    /*public $rules = [
         'id'               => '',
         'title'            => 'required',
         'allDay'           => '',
@@ -69,7 +69,7 @@ class Event
         'backgroundColor'  => '',
         'borderColor'      => '',
         'textColor'        => '',
-    ];
+    ];*/
 
     /**
      * Event constructor.

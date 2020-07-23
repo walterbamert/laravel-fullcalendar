@@ -33,7 +33,7 @@ class Event
     /** @var  boolean Is the event duration editable? */
     public $durationEditable = false;
     /** @var  string Allows alternate rendering of the event, like background events. Can be empty, "background", or "inverse-background" */
-    public $rendering;
+    public $display;
     /** @var  boolean  Overrides the master eventOverlap option for this single event. If false, prevents this event from being dragged/resized over other events. Also prevents other events from being dragged/resized over this event. */
     public $overlap = true;
     /** @var  string an event ID, "businessHours", object. Optional. Overrides the master eventConstraint option for this single event. */
@@ -61,7 +61,7 @@ class Event
         'editable'         => 'boolean',
         'startEditable'    => 'boolean',
         'durationEditable' => 'boolean',
-        'rendering'        => '',
+        'display'        => '',
         'overlap'          => 'boolean',
         'constraint'       => '',
         'source'           => '',

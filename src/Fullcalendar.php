@@ -14,12 +14,13 @@ class Fullcalendar
     protected $events = [];
     /** @var array */
     protected $defaultOptions = [
-        'header'   => [
+        'headerToolbar'   => [
             'left'   => 'prev,next today',
             'center' => 'title',
-            'right'  => 'month,agendaWeek,agendaDay',
-        ],
-        'firstDay' => 1,
+            'right'  => 'month,timeGridWeek,timeGridDay',
+        ]
+        /*,
+        'firstDay' => 1,*/
     ];
     /** @var array */
     protected $clientOptions = [];

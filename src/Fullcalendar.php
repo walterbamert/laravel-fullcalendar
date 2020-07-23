@@ -29,9 +29,7 @@ class Fullcalendar
      */
     public static function renderScriptFiles()
     {
-        return view('fullcalendar::files', [
-            'include_gcal' => config('fullcalendar.enable_gcal'),
-        ]);
+        return view('fullcalendar::files');
     }
 
     /**
@@ -76,8 +74,8 @@ class Fullcalendar
         return view('fullcalendar::script', [
             'id'              => $this->getId(),
             'options'         => $this->getOptionsJson(),
-            'include_full_scripts' => config('fullcalendar.include_scripts', false),
-            'include_min_scripts' => config('fullcalendar.include_scripts', false),
+            'include_full_scripts' => config('fullcalendar.include_full_scripts', false),
+            'include_min_scripts' => config('fullcalendar.include_min_scripts', true),
         ])->render();
     }
 

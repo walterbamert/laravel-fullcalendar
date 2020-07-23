@@ -19,8 +19,6 @@ class Fullcalendar
             'center' => 'title',
             'right'  => 'month,timeGridWeek,timeGridDay',
         ]
-        /*,
-        'firstDay' => 1,*/
     ];
     /** @var array */
     protected $clientOptions = [];
@@ -78,8 +76,8 @@ class Fullcalendar
         return view('fullcalendar::script', [
             'id'              => $this->getId(),
             'options'         => $this->getOptionsJson(),
-            'include_scripts' => config('fullcalendar.include_scripts', true),
-            'include_gcal'    => config('fullcalendar.enable_gcal', false),
+            'include_full_scripts' => config('fullcalendar.include_scripts', false),
+            'include_min_scripts' => config('fullcalendar.include_scripts', false),
         ])->render();
     }
 

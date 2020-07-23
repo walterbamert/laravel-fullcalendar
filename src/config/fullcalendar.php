@@ -2,12 +2,12 @@
 
 return [
     /**
-     * Auto include the scripts with every calendar render?
+     * Auto include the full file scripts with every calendar render?
      */
-    'include_scripts' => true,
+    'include_full_scripts' => false,
+
     /**
-     * Google Calender integration
-     * See https://fullcalendar.io/docs/google_calendar/
+     * Auto include the minified file scripts with every calendar render?
      */
-    'enable_gcal'     => false,
+    'include_min_scripts' => true,
 ];

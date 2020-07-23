@@ -1,5 +1,8 @@
-@if($include_scripts)
+@if($include_full_scripts)
     @include('fullcalendar::files')
+@endif
+@if($include_min_scripts)
+    @include('fullcalendar::minFiles')
 @endif
 
 <script type="text/javascript">

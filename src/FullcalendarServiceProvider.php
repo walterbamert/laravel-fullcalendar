@@ -44,10 +44,11 @@ class FullcalendarServiceProvider extends ServiceProvider
         $this->publishes([
             // fullcalendar library
             __DIR__ . '/../../../../node_modules/fullcalendar/main.css'       => public_path('css/fullcalendar.css'),
-            /*__DIR__ . '/../../../../node_modules/fullcalendar/fullcalendar.print.css' => public_path('css/fullcalendar.print.css'),*/
+            __DIR__ . '/../../../../node_modules/fullcalendar/main.min.css' => public_path('css/fullcalendar.min.css'),
             __DIR__ . '/../../../../node_modules/fullcalendar/main.js'        => public_path('js/fullcalendar.js'),
+            __DIR__ . '/../../../../node_modules/fullcalendar/main.min.js'        => public_path('js/fullcalendar.min.js'),
             __DIR__ . '/../../../../node_modules/fullcalendar/locales-all.js'          => public_path('js/locale-all.js'),
-            /*__DIR__ . '/../../../node_modules/fullcalendar/gcal.js'                => public_path('js/gcal.js'),*/
+            __DIR__ . '/../../../../node_modules/fullcalendar/locales-all.min.js'          => public_path('js/locale-all.min.js'),
             // moment library
             __DIR__ . '/../../../../node_modules/moment/moment.js'                         => public_path('js/moment.js'),
         ], 'fullcalendar');

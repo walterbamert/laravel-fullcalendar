@@ -4,4 +4,4 @@ This version will now install adding the required NPM packages directly without 
 ## Statement
 I have left this fork here so anyone tracking the origional package can find my new package. i wanted to rename the package as to not confuse people.
 ## New repo
-The new repo is https://bitbucket.org/aitcprojects/laravel7-fullcalendar
+The new repo is https://github.com/schedulemycoach/laravel7-fullcalendar

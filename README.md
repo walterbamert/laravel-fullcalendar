@@ -1,9 +1,8 @@
 # Laravel fullcalendar component
-Notice: This is a fork of  Edofre/laravel-fullcalendar package, which I have grown to love and use. My intention is to bring it up to code compliance for the newer versions of Laravel. 
-This version will now install adding the required NPM package directly without Bower. We are still under going testing on this package.
-DO NOT USE THIS CODE!!! See https://github.com/Edofre/laravel-fullcalendar for the original package.
+Notice: This is a fork of  Edofre/laravel-fullcalendar package, which I have grown to love and use. This package is now code compliant for the newer versions of Laravel 7. 
+This version will now install adding the required NPM packages directly without Bower or the fxp/composer-asset plugin.
 ## Warning
-DO NOT USE THIS CODE!!! See https://github.com/Edofre/laravel-fullcalendar for the original package.
+If you are upgrading from a previous version I would remove Edofre/laravel-fullcalendar package, any unneed Bower/fxp/composer-asset plugin components and any config and CSS/JS files in your public folder.
 
 ## Use with Laravel/Homestead
 This package will NOT install properly under Laravel/Homestead at this time because of VirtualBox Issues.
@@ -15,7 +14,7 @@ The preferred way to install this extension is through [composer](http://getcomp
 To install, either run
 
 ```
-$ php composer.phar require walterbamert/laravel-fullcalendar
+$ php composer require walterbamert/laravel-fullcalendar
 ```
 
 or add
@@ -28,7 +27,7 @@ to the ```require``` section of your `composer.json` file.
 
 ### Note 
 The fxp/composer-asset plugin is no longer required for this package to install properly.
-We have converted the package to use Foxy. This plugin enables you to download NPM packages through composer and is included as part of this package.
+We have converted this package to use Foxy. This plugin enables you to download NPM packages through composer and is included as part of this package.
 You can find more info on this page: [https://github.com/fxpio/foxy](https://github.com/fxpio/foxy).
 
 ## Configuration
@@ -54,14 +53,21 @@ Publish assets and configuration files
 php artisan vendor:publish --tag=config
 php artisan vendor:publish --tag=fullcalendar
 ```
-
+### The Config File
+By publish the vendor config file you will find a new file called fullcalendar.php in the /config folder. These configs allow you to load either the minified or non-minified CSS and JS for Fullcalander. 
+#### Google Calendar Inclusion
+Per the Fullcalendar NPM package the google calendar CSS/JS files are now included and do not need to be loaded seperately.
 ### Manually loading script files
-By setting the include_scripts option in the config/.env file to false the scripts will not be included when generating the calendar.
+By setting the both the include_scripts options in the config file to *false* the scripts will not be included when generating the calendar.
 If you want to manually include the scripts you can call the following static function in your header/footer/etc.
+#### For the Full files
 ```
-    \walterbamert\Fullcalendar\Fullcalendar::renderScriptFiles();
+    \walterbamert\Fullcalendar\Fullcalendar::renderFullScriptFiles();
 ```
-
+#### For the Minified files
+```
+      \walterbamert\Fullcalendar\Fullcalendar::renderMinScriptFiles();
+```
 ### Example
 Below is an example of a controller action configuring the calendar
 ```php
@@ -81,19 +87,17 @@ Below is an example of a controller action configuring the calendar
             'locale'      => 'nl',
             'weekNumbers' => true,
             'selectable'  => true,
-            'defaultView' => 'agendaWeek',
+            'themeSystem' =>'bootstrap',
+            /* Scripts need for this are not included in the package. See bootstrap theming at https://fullcalendar.io/docs/bootstrap-theme */
+            'initialView' => 'dayGridMonth',
+         /* options are dayGridMonth,dayGridWeek,dayGridDay,dayGrid,timeGridWeek,timeGridDay,timeGrid,listYear,listMonth,listWeek,listDay,list */
             // Add the callbacks
             'eventClick' => new \walterbamert\Fullcalendar\JsExpression("
                 function(event, jsEvent, view) {
                     console.log(event);
                 }
             "),
-            'viewRender' => new \walterbamert\Fullcalendar\JsExpression("
-                function( view, element ) {
-                    console.log(\"View \"+view.name+\" rendered\");
-                }
-            "),
-        ]);
+         ]);
 
         // Check out the documentation for all the options and callbacks.
         // https://fullcalendar.io/docs/

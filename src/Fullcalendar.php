@@ -17,19 +17,28 @@ class Fullcalendar
         'headerToolbar'   => [
             'left'   => 'prev,next today',
             'center' => 'title',
-            'right'  => 'month,timeGridWeek,timeGridDay',
+            'right'  => 'dayGridMonth,timeGridWeek,timeGridDay',
         ]
     ];
     /** @var array */
     protected $clientOptions = [];
 
     /**
-     * Renders the view that includes the script files
+     * Renders the view that includes the full script files
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
-    public static function renderScriptFiles()
+    public static function renderFullScriptFiles()
     {
         return view('fullcalendar::files');
+    }
+
+    /**
+     * Renders the view that includes the minifiedscript files
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
+    public static function renderMinScriptFiles()
+    {
+        return view('fullcalendar::minFiles');
     }
 
     /**

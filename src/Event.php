@@ -32,7 +32,7 @@ class Event
     public $startEditable = false;
     /** @var  boolean Is the event duration editable? */
     public $durationEditable = false;
-    /** @var  string Allows alternate rendering of the event, like background events. Can be empty, "background", or "inverse-background" */
+    /** @var  string Allows alternate rendering of the event, like background events. Can be 'auto', 'block', 'list-item', 'background', 'inverse-background', or 'none' */
     public $display;
     /** @var  boolean  Overrides the master eventOverlap option for this single event. If false, prevents this event from being dragged/resized over other events. Also prevents other events from being dragged/resized over this event. */
     public $overlap = true;
